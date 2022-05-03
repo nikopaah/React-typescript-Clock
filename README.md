@@ -56,7 +56,11 @@ npm install --save-dev sass
 - É preciso alterar o nome dos arquivos CSS para o plugin funcionar, como por exemplo, de `Arquivo.css` para `Arquivo.module.css`
 ```javascript
 > npm install -D typescript-plugin-css-modules
-> tsconfig 
-> compilerOptions
-> "plugins": [{ "name": "typescript-plugin-css-modules" }]
+```
+- **tsconfig** 
+```javascript
+"compilerOptions": {
+    [ ... ]
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+}
 ```

@@ -9,7 +9,7 @@ Abaixo há toda a anotação que criei através do curso e de pesquisa própria 
 - Instalar o [Node.js](https://nodejs.org/en/)
 - Entrar na pasta que você irá criar o projeto pelo `CMD` e digitar:
 ```javascript
-npx create-react-app Nome-Pasta --template typescript --use-npm
+npx create-react-app nome-pasta --template typescript --use-npm
 ```
 
 ## Iniciar o Projeto
@@ -18,6 +18,26 @@ npx create-react-app Nome-Pasta --template typescript --use-npm
 ```javascript
 npm start
 ```
+----------------------
+
+# Programação
+## Básico
+```javascript
+<Botao type="submit"> Adicionar </Botao>
+```
+```javascript
+class Botao extends React.Component<{ type?: "button" | "submit" | "reset" | undefined }> {
+    render() {
+        const { type="button" } = this.props;
+
+        return (
+            <button type={ type } className={style.botao}> {this.props.children} </button>
+        )
+    }
+}
+```
+
+## States
 
 ----------------------
 
